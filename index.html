@@ -36,21 +36,28 @@
           </div>
         </div>
       </nav>
+      <div class="px-10 py-2 max-w-[700px] mx-auto mt-[50px]">
+        <img src="Image/logo.png" alt="" />
+      </div>
     </header>
     <section>
       <div
-        class="bg-[url(Image/hero.png)] max-w-[1000px] mx-auto h-[120px] bg-cover bg-left flex items-center mt-[50px]"
+        class="bg-[url(Image/hero.png)] w-full mx-auto md:h-[180px] h-[120px] bg-cover bg-left relative overflow-hidden"
       >
-        <div class="px-10 py-2 max-w-[400px] mx-auto">
-          <img src="Image/logo.png" alt="" />
+        <div
+          class="mx-auto w-[140px] h-[140px] rounded-full bg-yellow-600 -bottom-[70px] absolute left-1/2 -translate-x-1/2 md:flex hidden pt-6 text-xl text-white justify-center"
+        >
+          法律新知
         </div>
       </div>
     </section>
     <main class="font-light">
-      <div class="bg-yellow-700 text-white py-2 px-2">
+      <div
+        class="bg-yellow-700 md:bg-transparent text-white md:text-gray-500 py-2 px-2"
+      >
         <div class="flex justify-between max-w-[1000px] mx-auto">
           <div class="w-20"></div>
-          <div>法律新知</div>
+          <div class="md:hidden">法律新知</div>
           <div class="flex items-center gap-2">
             <i class="fa-solid fa-house"></i>/法律新知
           </div>
@@ -380,12 +387,20 @@
       </section>
     </main>
 
-    <button
-      id="btn"
-      class="fixed bottom-3 right-3 z-30 bg-black bg-opacity-25 text-white w-8 h-8 rounded-full felx justify-center items-center"
-    >
-      <i class="fa-solid fa-angle-up"></i>
-    </button>
+    <div class="fixed bottom-3 right-3 z-30">
+      <a
+        href=""
+        class="flex h-12 w-12 justify-center items-center rounded-full overflow-hidden"
+      >
+        <img src="Image/line.png" alt="" />
+      </a>
+      <button
+        id="btn"
+        class="bg-black bg-opacity-25 text-white w-12 h-12 rounded-full felx justify-center items-center mt-3"
+      >
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
+    </div>
 
     <footer class="w-full bg-zinc-700 text-center px-2 py-3 text-white">
       <p>Copyright © 雍和法律事務所 All Rights Reserved. 網頁設計 : 新視野</p>
